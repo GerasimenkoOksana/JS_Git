@@ -1,0 +1,106 @@
+.container1{
+    display:grid;
+    grid-gap:0px;  
+    background-color: bisque;
+    border: 1px solid black;
+    width: 100px;
+    font-weight:bold;
+    text-align:center;    
+    margin: 20px;;
+}
+.count{
+    grid-column:1/ span 2;
+    
+    grid-row:1/ span 2;
+    font-size: 40pt;
+    border: 1px solid black;
+    text-align:center;
+    display:block;
+}
+.btnUp{
+    grid-column:3/3;
+    grid-row:1/1;
+    font-size: 16pt;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.btnDown{
+    grid-column:3/3;
+    grid-row:2/2;
+    font-size: 16pt;
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.container2{
+    background-color: bisque;
+    display:grid;
+    grid-gap:10px; 
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;  
+    width: 400px;
+    margin:20px;
+}
+.colorBlock{
+    width: 40px;
+    height: 30px;
+    
+}
+.btnAddBlock{
+    width: 420px;
+    background-color: rgb(202, 189, 173);
+    font-size: 16pt;
+    margin:20px;
+    margin-top:0;
+}
+
+.container3{
+margin-top: 30px; 
+margin: 20px;
+background-color: bisque;
+width: 600px;
+padding: 10px;
+}
+
+.colors{    
+    display:grid;
+    grid-gap:3px; 
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;  
+    width: 100px;
+    margin:20px;
+}
+.colorForText{
+    width: 20px;
+    height: 20px;
+}
+.text{
+    font-size:14pt;   
+    margin: 20px;
+}
+.container4{
+   width:600px;
+   margin: 20px;
+   padding: 20px;
+   background-color:bisque;
+   font-size: 14pt; 
+}
+.header{
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+.text4{
+    margin-bottom: 20px;
+}
+.date{
+    font-style: italic;
+    font-size: 10pt;
+}
+.author{   
+    font-size: 14pt;
+    font-weight: bold;
+}
+.btnAddComment{
+    width:580px;
+}

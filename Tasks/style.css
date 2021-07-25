@@ -1,0 +1,131 @@
+.container1{
+        width:600px;
+        height:110px;
+        background-color:bisque;
+        margin:20px;
+        font-size: 20pt;
+        text-align: center;
+        padding-top: 20px;        
+    }
+.button1{
+    width:160px;
+    height:30px;
+    background-color: rgb(235, 200, 190);
+    margin-top: 20px;;
+    font-size: 12pt;
+    border-color: pink;
+}
+.label1{
+    font-size:12pt
+}
+.div2{
+    width:600px;
+    height:400px;
+    margin:20px;
+    background-color:bisque; 
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 20px;
+}
+.container3{
+    width:600px;
+    height:content;
+    background-color:bisque;
+    margin:20px;
+   
+    text-align: center;
+    padding-top: 20px;        
+}
+.div3{
+    font-size: 14pt;
+    margin:20px;
+    padding: 10px;;
+}
+.button3{
+    font-size:14pt;
+    margin-bottom: 20px;
+}
+.container4{
+    width:600px;
+    margin:20px;
+    margin-top: 40px;
+    display: grid;
+    grid-gap:0;
+    grid-template-columns: 100px 500px;
+    grid-template-rows: repeat(3, 50px);
+    border: 1px solid black;
+}
+.menuItem{
+    background-color:rgb(121, 185, 204);
+    grid-column: 1/1;
+    font-size:16pt;
+    text-align: center;
+    padding:20px;  
+}
+.menuItemHTML{  
+    grid-row: 1/1;  
+}
+.menuItemCSS{   
+    grid-row: 2/2;
+}
+.menuItemJS{
+    grid-row: 3/3;
+}
+.contentMenu{
+    grid-column: 2/2;
+    grid-row: 1/ span 3;
+    padding:20px;  
+    font-size: 12pt;
+    background-color:rgb(240, 233, 232);
+    position: relative;
+    top: 0;
+    left:0;
+}
+.menuItem:hover{
+    background-color:rgb(41, 104, 155);
+}
+.container5{
+    width: 600px;
+    margin:20px;
+    padding: 10px;
+    background-color:rgb(240, 236, 240);
+    font-size:14pt;
+}
+.header{
+    font-size:18pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btnRemove{
+    width:100px;    
+    font-size:12pt;
+    margin:5px;
+    background-color: rgb(194, 189, 189);
+}
+
+.container6{
+    width: 400px;
+    background-color:rgb(238, 231, 233);
+    align-items: center;
+    align-content: center;
+    margin:20px;
+    padding:40px;
+}
+.progressContainer{
+    width: 350px;
+    height:50px;
+    border:1px solid black;
+    background-color:white;
+   
+}
+.progress{
+    width:10px;
+    height:50px;
+    background-color:rgb(27, 114, 117);
+}
+.btnAdd5{
+    width: 350px;
+    font-size:18pt;
+    margin-top: 20px;
+}

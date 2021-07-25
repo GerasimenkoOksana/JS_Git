@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header class="header">LIBRARY</header>
+    <div class="menu">  
+        <div class="menuItem">BOOKS</div>
+        <div class="menuItem">VISITORS</div>
+        <div class="menuItem">CARDS</div>
+        <div class="menuItem">STATISTICS</div>
+    </div>
+    <main class="main"> 
+        <div class=container>     
+            <div class="headPage">ALL BOOKS:</div> <div></div>
+            <button type="button" class="btnAddBook">New book</button>
+        </div> 
+        <hr> 
+        <div class="container">
+            <div>
+                sort by: 
+                <select class="sortby" size=1> 
+                    <option value="ID">ID</option>
+                    <option value="Name">Name</option>
+                    <option value="Author">Author</option>
+                    <option value="Year">Year</option>
+                    <option value="Publisher">Publisher</option>
+                    <option value="Pages">Pages</option>
+                    <option value="Count">Count</option>
+                </select>
+                <button type="button" class="btn btnSort">Sort</button>
+            </div>
+            <div>
+                search: <input type="text" class="search">
+                <button type="button" class="btn btnSearch">Search</button>
+            </div>
+        </div>        
+    </main>
+    <div class = "modal">
+        <div class="modal-dialog">
+            <div class="modal_content">
+                <div class="modal-title">ADD NEW BOOK </div>
+                <div class="modal-body">
+                    Author: <input type="text" required pattern = "^[a-zA-ZА-Яа-яЁё\s]+$" class="inputAuthor"  size='25' ><br>
+                    Name: <input type="text" required pattern = "^[0-9a-zA-ZА-Яа-яЁё\s]+$" class="inputName" size='27' ><br>
+                    Publisher: <input type="text" required pattern = "^[0-9a-zA-ZА-Яа-яЁё\s]+$" class="inputPub" size='23' ><br>
+                    Year: <input type="text" required pattern = "[0-9]{4}" size='6' class="inputYear" >
+                    Pages: <input type="text" required pattern = "[0-9]{0,4}" size='6' class="inputPages" ><br>
+                    Count in library: <input type="text" required pattern = "[0-9]{0,3}" size='6' class="inputCount" ><br>
+                    <button type="button" class="btnModalAdd">Add</button>
+                    <button type="button" class="btnModalCancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

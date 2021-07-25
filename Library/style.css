@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(229, 250, 250);
+}                                                                                                                                                         
+.header{
+    font-size:26pt;
+    font-weight:bold;
+    color:rgb(42, 104, 119);
+    margin:40px;    
+    text-shadow: 1px 1px 5px rgb(16, 134, 163);
+}
+.menu{
+    width:100%;
+    height: 30px;
+    font-size:20pt;
+    font-weight:bold;
+    padding:20px;
+    padding-left: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+    background-color:rgb(41, 129, 141)
+}
+.menuItem{
+    color:rgb(29, 70, 117);    
+}
+.menuItem:hover{
+    color:rgb(15, 47, 49);      
+}
+.main{
+    font-size: 18pt;  
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(29, 70, 117);  
+    margin:20px;  
+}
+
+.headPage{
+    font-size: 18pt;
+    margin:40px;
+    margin-bottom: 0px;
+   font-weight: bold;
+   color:rgb(57, 138, 158);
+  
+}
+.btnAddBook{
+    margin-right: 20px;
+    margin-top:30px;
+    width:200px;
+    height:30px;   
+    font-size:12pt;
+    font-weight:bold;
+    color:rgb(29, 70, 117);    
+}
+.sortby{
+    font-size: 14pt;
+    margin-left:10px;
+}
+.btn{
+    font-size: 12pt;
+    width:100px;
+    font-weight:bold;
+    margin:20px;
+}
+.container{
+display:flex;
+justify-content:space-between;
+}
+.tableBooks{
+    width:98%;
+    font-size:18pt;
+    border-collapse:collapse;
+    border: 2px solid rgb(29, 70, 117);
+    margin:20px;
+}
+td{
+    border: 1px solid rgb(29, 70, 117);
+    padding:10px;
+}
+.tableHeader{
+    background-color: rgb(188, 221, 221);
+    font-weight: bold;
+    text-align:center;
+}
+.tdDel{
+    color:rgb(184, 26, 26);
+    font-weight: bold;
+    font-size: 22pt;
+    text-align:center;
+    font-family: Arial;
+    cursor: pointer;
+}
+.tdNumber{
+    text-align:center;
+}
+.search{
+    font-size:14pt;
+}
+.modal{
+    position: fixed;       
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    background: rgb(25, 51, 54);
+    transition: opacity 400ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.modal_active{
+    opacity: 0.9;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+  }
+ 
+  .modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+    color:white;
+  }
+  .modal-body {
+    width:500px;
+    position: relative;  
+    padding: 10px;
+    overflow: auto;
+    color:white;
+    font-size: 22pt;
+    margin:20px;
+  }
+  .modal-body >input{
+    font-size: 14pt;
+    margin:10px;   
+  }
+  .modal-body >button{
+      font-size:16pt;
+      margin:50px;
+      width:100px;
+  }
+  .modal-body >input:invalid{
+    box-shadow: 0 0 5px 1px red;
+  }
+  .modal-body >input:focus:invalid{
+    outline: none;
+  }
+  .modal-body >input:valid{
+    box-shadow: 0 0 5px 1px green;
+}
